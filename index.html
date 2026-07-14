@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>噴寶 SPRAYPAL × 黑珍珠｜官方連結 App 索引</title>
+<meta name="description" content="噴寶 SPRAYPAL 與黑珍珠集團官方連結索引:像手機主畫面一樣,點選圖示直達官網、社群與購物通路。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Oswald:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --indigo:#2b2b6e;
+    --indigo-deep:#16163c;
+    --brass:#c39d6f;
+    --brass-bright:#e0bd8b;
+    --bp-red:#b43b3b;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  body{
+    font-family:'Noto Sans TC',sans-serif;
+    color:#fff;
+    background:
+      radial-gradient(1200px 600px at 85% -10%, rgba(195,157,111,.22), transparent 60%),
+      radial-gradient(900px 500px at 0% 110%, rgba(61,61,138,.55), transparent 60%),
+      linear-gradient(150deg, var(--indigo-deep) 0%, var(--indigo) 60%, #343480 100%);
+    background-attachment:fixed;
+    min-height:100vh;
+    overflow-x:hidden;
+  }
+
+  .topbar{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:20px 34px 8px;
+    max-width:1100px;margin:0 auto;
+  }
+  .brand{display:flex;align-items:baseline;gap:12px}
+  .brand .zh{font-size:22px;font-weight:900;letter-spacing:.12em}
+  .brand .en{
+    font-family:'Oswald',sans-serif;font-weight:600;
+    font-size:11px;letter-spacing:.4em;text-transform:uppercase;
+    color:var(--brass-bright);
+  }
+  .cert{
+    display:flex;align-items:center;gap:7px;
+    font-size:11px;letter-spacing:.1em;
+    color:var(--brass-bright);
+    border:1px solid rgba(224,189,139,.45);
+    border-radius:999px;
+    padding:5px 14px;
+    white-space:nowrap;
+  }
+  .cert svg{width:12px;height:12px;flex:none}
+
+  .board{
+    max-width:1100px;
+    margin:0 auto;
+    padding:8px 34px 28px;
+    position:relative;
+  }
+  .zone{
+    position:relative;z-index:2;
+    padding:22px 0 6px;
+  }
+  .zone + .zone{
+    margin-top:10px;
+    border-top:1px solid rgba(255,255,255,.14);
+  }
+  .zone-head{
+    display:flex;align-items:baseline;gap:14px;
+    margin-bottom:22px;
+  }
+  .zone-title{
+    font-size:19px;font-weight:900;letter-spacing:.14em;
+  }
+  .zone-en{
+    font-family:'Oswald',sans-serif;font-weight:600;
+    font-size:11px;letter-spacing:.35em;text-transform:uppercase;
+    color:var(--brass-bright);
+  }
+  .zone-bp .zone-en{color:#ff9d9d}
+  .zone-tag{
+    margin-left:auto;
+    font-size:11px;color:rgba(255,255,255,.55);letter-spacing:.08em;
+  }
+
+  .grid{
+    display:grid;
+    grid-template-columns:repeat(5,minmax(96px,128px));
+    gap:30px 40px;
+    justify-content:center;
+  }
+  a.app{
+    display:flex;flex-direction:column;align-items:center;gap:10px;
+    text-decoration:none;color:#fff;
+  }
+  .squircle{
+    width:88px;height:88px;border-radius:24px;
+    display:flex;align-items:center;justify-content:center;
+    box-shadow:0 10px 24px rgba(0,0,0,.32), inset 0 1px 0 rgba(255,255,255,.28);
+    transition:transform .16s ease, box-shadow .16s ease;
+  }
+  .squircle svg{width:42px;height:42px}
+  a.app:hover .squircle,
+  a.app:focus-visible .squircle{
+    transform:translateY(-5px) scale(1.05);
+    box-shadow:0 18px 34px rgba(0,0,0,.4), inset 0 1px 0 rgba(255,255,255,.28);
+  }
+  a.app:active .squircle{transform:scale(.93);transition-duration:.06s}
+  a.app:focus-visible{outline:none}
+  a.app:focus-visible .squircle{outline:2px solid var(--brass-bright);outline-offset:3px}
+  .app-name{
+    font-size:13.5px;font-weight:700;letter-spacing:.05em;
+    text-shadow:0 1px 4px rgba(0,0,0,.4);text-align:center;line-height:1.35;
+  }
+  .app-sub{
+    font-size:10.5px;font-weight:500;color:rgba(255,255,255,.62);
+    letter-spacing:.04em;text-align:center;
+  }
+
+  .bg-logo{background:#fff;overflow:hidden;padding:6px}
+  .bg-bplogo{background:linear-gradient(145deg,#2c2c2c,#0a0a0a);overflow:hidden}
+  .logo-img{width:100%;height:100%;object-fit:contain;border-radius:inherit}
+  .bp-pad{padding:10px}
+  .bg-ig{background:radial-gradient(circle at 28% 108%,#fdf497 0%,#fd5949 45%,#d6249f 62%,#285AEB 92%)}
+  .bg-th{background:linear-gradient(145deg,#2a2a2a,#000)}
+  .bg-fb{background:linear-gradient(145deg,#3b8bff,#1877f2)}
+  .bg-yt{background:linear-gradient(145deg,#ff4e45,#e00000)}
+  .bg-line{background:linear-gradient(145deg,#12d35c,#06C755)}
+  .bg-shopee{background:linear-gradient(145deg,#ff6b47,#ee4d2d)}
+  .bg-momo{background:linear-gradient(145deg,#ef4f95,#d62872)}
+  .bg-pchome{background:linear-gradient(145deg,#ff3b3b,#cf0410)}
+  .bg-etmall{background:linear-gradient(145deg,#37b34a,#1f8f31)}
+  .bg-yahoo{background:linear-gradient(145deg,#7e1fff,#5f01d1)}
+  .bg-dm{background:linear-gradient(145deg,var(--brass-bright),var(--brass))}
+
+  .dock-area{display:flex;justify-content:center;padding:2px 24px 26px}
+  .dock{
+    display:flex;align-items:center;gap:10px;
+    background:rgba(255,255,255,.12);
+    border:1px solid rgba(255,255,255,.16);
+    backdrop-filter:blur(14px);
+    -webkit-backdrop-filter:blur(14px);
+    border-radius:22px;
+    padding:9px 18px;
+    font-size:11.5px;letter-spacing:.14em;
+    color:rgba(255,255,255,.82);
+  }
+  .dock .en{font-family:'Oswald',sans-serif;letter-spacing:.3em;font-size:10.5px;color:var(--brass-bright);text-transform:uppercase}
+  .dock .dot{width:3px;height:3px;border-radius:50%;background:rgba(255,255,255,.4)}
+
+  .mist-dot{
+    position:absolute;border-radius:50%;
+    background:var(--brass-bright);opacity:0;
+    animation:mist 5s ease-out infinite;
+    pointer-events:none;z-index:1;
+  }
+  @keyframes mist{
+    0%{transform:translate(0,0) scale(.4);opacity:0}
+    15%{opacity:.35}
+    100%{transform:translate(var(--dx),var(--dy)) scale(1);opacity:0}
+  }
+  @media (prefers-reduced-motion:reduce){.mist-dot{display:none}}
+
+  @media (max-width:760px){
+    .topbar{flex-direction:column;gap:10px;padding:20px 20px 4px;text-align:center}
+    .brand{flex-direction:column;gap:4px;align-items:center}
+    .board{padding:6px 16px 20px}
+    .grid{grid-template-columns:repeat(3,minmax(84px,104px));gap:24px 18px}
+    .squircle{width:74px;height:74px;border-radius:20px}
+    .squircle svg{width:36px;height:36px}
+    .cert{font-size:10px;padding:4px 12px}
+    .zone-head{flex-wrap:wrap;gap:8px 12px;justify-content:center;text-align:center}
+    .zone-tag{margin-left:0;width:100%}
+  }
+  @media (max-width:760px) and (orientation:landscape){
+    .grid{grid-template-columns:repeat(5,minmax(78px,96px));gap:18px 22px}
+    .squircle{width:64px;height:64px;border-radius:18px}
+    .squircle svg{width:30px;height:30px}
+    .app-name{font-size:12px}
+    .app-sub{display:none}
+    .topbar{flex-direction:row;padding:12px 24px 0}
+    .brand{flex-direction:row}
+  }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <span class="zh">噴寶・揚軒食品</span>
+    <span class="en">Spraypal &middot; YumSpray Food</span>
+  </div>
+  <div class="cert">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4L12 14.4 7.2 16.9l.9-5.4L4.2 7.7l5.4-.8z"/></svg>
+    全台首家合法認證 食品級噴霧油充填廠｜ISO22000・SGS
+  </div>
+</header>
+
+<main class="board" id="mistZone">
+
+  <!-- ── 上區塊:噴寶・揚軒食品 ── -->
+  <section class="zone">
+    <div class="zone-head">
+      <h2 class="zone-title">噴寶・揚軒食品</h2>
+      <span class="zone-en">Spraypal</span>
+      <span class="zone-tag">食品級噴霧油</span>
+    </div>
+    <nav class="grid" aria-label="噴寶・揚軒食品連結">
+    <a class="app" href="https://www.yumspray.com/" target="_blank" rel="noopener">
+      <span class="squircle bg-logo">
+        <img src="https://cdn-general.cybassets.com/media/W1siZiIsIjMzMzYyL2F0dGFjaGVkX3Bob3Rvcy8xNzU2ODAyMzIwX-aPmui7kumjn-WTgUxPR0_vvIjmnInpoY_oibLvvIktMDUuanBnLmpwZWciXV0.jpeg?sha=4d15a2676245ab38" alt="揚軒食品 LOGO" class="logo-img">
+      </span>
+      <span class="app-name">官方購物網站</span>
+      <span class="app-sub">yumspray.com</span>
+    </a>
+    <a class="app" href="https://www.instagram.com/yumspray/" target="_blank" rel="noopener">
+      <span class="squircle bg-ig">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="#fff" stroke="none"/></svg>
+      </span>
+      <span class="app-name">Instagram</span>
+      <span class="app-sub">@yumspray</span>
+    </a>
+    <a class="app" href="https://www.threads.net/@yumspray" target="_blank" rel="noopener">
+      <span class="squircle bg-th">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21c-4.5 0-7.5-3-7.5-9S7.5 3 12 3c3.8 0 6.5 2 7.2 5.5M16 12.5c1.8.8 2.8 2 2.8 3.5 0 2.5-2.4 4-5.3 4-2.4 0-4-1.2-4-3s1.6-3 4-3c3.2 0 5 1.5 5.2 4.5"/></svg>
+      </span>
+      <span class="app-name">Threads</span>
+      <span class="app-sub">@yumspray</span>
+    </a>
+    <a class="app" href="https://www.facebook.com/profile.php?id=100064000724124" target="_blank" rel="noopener">
+      <span class="squircle bg-fb">
+        <svg viewBox="0 0 24 24" fill="#fff"><path d="M15.5 8.5H13.8c-.3 0-.8.2-.8 1V11h2.5l-.4 2.6H13V21h-3v-7.4H8V11h2V9.2C10 6.9 11.3 6 13.3 6h2.2v2.5z"/></svg>
+      </span>
+      <span class="app-name">Facebook</span>
+      <span class="app-sub">官方粉絲專頁</span>
+    </a>
+    <a class="app" href="https://www.youtube.com/@yumspray" target="_blank" rel="noopener">
+      <span class="squircle bg-yt">
+        <svg viewBox="0 0 24 24" fill="#fff"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.3 5 12 5 12 5s-6.3 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2 26 26 0 0 0 2 12a26 26 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.8 1.8c1.5.4 7.8.4 7.8.4s6.3 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8A26 26 0 0 0 22 12a26 26 0 0 0-.4-4.8zM10 15V9l5.2 3z"/></svg>
+      </span>
+      <span class="app-name">YouTube</span>
+      <span class="app-sub">@yumspray</span>
+    </a>
+    <a class="app" href="https://shopee.tw/trade800" target="_blank" rel="noopener">
+      <span class="squircle bg-shopee">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1 12a2 2 0 0 1-2 1.8H8A2 2 0 0 1 6 20z"/><path d="M9 8V7a3 3 0 0 1 6 0v1M10 15c0 1.2 1 2 2 2s2-.7 2-1.7c0-2-4-1.3-4-3.3 0-1 .9-1.7 2-1.7s2 .8 2 2"/></svg>
+      </span>
+      <span class="app-name">蝦皮購物</span>
+      <span class="app-sub">trade800</span>
+    </a>
+    <a class="app" href="https://www.momoshop.com.tw/search/searchShop.jsp?keyword=%E5%99%B4%E5%AF%B6&searchType=1&curPage=1&_isFuzzy=0&showType=chessboardType&isBrandCategory=N&serviceCode=MT01" target="_blank" rel="noopener">
+      <span class="squircle bg-momo">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M2 3h3l2.6 12.5a2 2 0 0 0 2 1.5h8.9a2 2 0 0 0 2-1.6L22 7H6"/></svg>
+      </span>
+      <span class="app-name">momo 購物網</span>
+      <span class="app-sub">噴寶全系列</span>
+    </a>
+    <a class="app" href="https://24h.pchome.com.tw/search/?q=Spraypal%E5%99%B4%E5%AF%B6&scope=all" target="_blank" rel="noopener">
+      <span class="squircle bg-pchome">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg>
+      </span>
+      <span class="app-name">PChome 24h</span>
+      <span class="app-sub">24 小時到貨</span>
+    </a>
+    <a class="app" href="https://photos.app.goo.gl/77Rca7E3np8qx4YLA" target="_blank" rel="noopener">
+      <span class="squircle bg-dm">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h6"/></svg>
+      </span>
+      <span class="app-name">產品 DM</span>
+      <span class="app-sub">系列資訊</span>
+    </a>
+    </nav>
+  </section>
+
+  <!-- ── 下區塊:黑珍珠 ── -->
+  <section class="zone zone-bp">
+    <div class="zone-head">
+      <h2 class="zone-title">黑珍珠</h2>
+      <span class="zone-en">Black Pearl</span>
+      <span class="zone-tag">黑珍珠國際企業</span>
+    </div>
+    <nav class="grid" aria-label="黑珍珠連結">
+    <a class="app" href="https://www.blackpearl.com.tw/index_tw.php" target="_blank" rel="noopener">
+      <span class="squircle bg-bplogo">
+        <img src="https://www.blackpearl.com.tw/images/tw/logo.png" alt="黑珍珠 LOGO" class="logo-img bp-pad">
+      </span>
+      <span class="app-name">黑珍珠官方網站</span>
+      <span class="app-sub">blackpearl.com.tw</span>
+    </a>
+    <a class="app" href="https://www.instagram.com/blackpearl.tw/" target="_blank" rel="noopener">
+      <span class="squircle bg-ig">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="#fff" stroke="none"/></svg>
+      </span>
+      <span class="app-name">Instagram</span>
+      <span class="app-sub">@blackpearl.tw</span>
+    </a>
+    <a class="app" href="https://www.facebook.com/blackpearl.tw" target="_blank" rel="noopener">
+      <span class="squircle bg-fb">
+        <svg viewBox="0 0 24 24" fill="#fff"><path d="M15.5 8.5H13.8c-.3 0-.8.2-.8 1V11h2.5l-.4 2.6H13V21h-3v-7.4H8V11h2V9.2C10 6.9 11.3 6 13.3 6h2.2v2.5z"/></svg>
+      </span>
+      <span class="app-name">Facebook</span>
+      <span class="app-sub">官方粉絲專頁</span>
+    </a>
+    <a class="app" href="https://www.youtube.com/channel/UClyhJ3Rrjwut0hwG2GN-gTg" target="_blank" rel="noopener">
+      <span class="squircle bg-yt">
+        <svg viewBox="0 0 24 24" fill="#fff"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.3 5 12 5 12 5s-6.3 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2 26 26 0 0 0 2 12a26 26 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.8 1.8c1.5.4 7.8.4 7.8.4s6.3 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8A26 26 0 0 0 22 12a26 26 0 0 0-.4-4.8zM10 15V9l5.2 3z"/></svg>
+      </span>
+      <span class="app-name">YouTube</span>
+      <span class="app-sub">黑珍珠集團</span>
+    </a>
+    <a class="app" href="https://lin.ee/TCnnv79" target="_blank" rel="noopener">
+      <span class="squircle bg-line">
+        <svg viewBox="0 0 24 24" fill="#fff"><path d="M12 3C6.9 3 2.8 6.4 2.8 10.6c0 3.7 3.3 6.9 7.7 7.5.3.1.7.2.8.5.1.3.1.7 0 1l-.1.8c0 .2-.2.9.8.5s5.3-3.1 7.2-5.3c1.3-1.5 2-3 2-4.9C21.2 6.4 17.1 3 12 3zM8.4 13.1H6.5a.5.5 0 0 1-.5-.5V8.9a.5.5 0 0 1 1 0v3.2h1.4a.5.5 0 0 1 0 1zm1.9-.5a.5.5 0 0 1-1 0V8.9a.5.5 0 0 1 1 0zm4.6 0a.5.5 0 0 1-.9.3l-1.9-2.6v2.3a.5.5 0 0 1-1 0V8.9a.5.5 0 0 1 .9-.3l1.9 2.6V8.9a.5.5 0 0 1 1 0zm3.1-2.4a.5.5 0 0 1 0 1h-1.4v.9h1.4a.5.5 0 0 1 0 1h-1.9a.5.5 0 0 1-.5-.5V8.9a.5.5 0 0 1 .5-.5h1.9a.5.5 0 0 1 0 1h-1.4v.8z"/></svg>
+      </span>
+      <span class="app-name">LINE 官方帳號</span>
+      <span class="app-sub">加入好友</span>
+    </a>
+    <a class="app" href="https://shopee.tw/twbp6389" target="_blank" rel="noopener">
+      <span class="squircle bg-shopee">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1 12a2 2 0 0 1-2 1.8H8A2 2 0 0 1 6 20z"/><path d="M9 8V7a3 3 0 0 1 6 0v1M10 15c0 1.2 1 2 2 2s2-.7 2-1.7c0-2-4-1.3-4-3.3 0-1 .9-1.7 2-1.7s2 .8 2 2"/></svg>
+      </span>
+      <span class="app-name">蝦皮購物</span>
+      <span class="app-sub">twbp6389</span>
+    </a>
+    <a class="app" href="https://m.momoshop.com.tw/search.momo?searchKeyword=%E9%BB%91%E7%8F%8D%E7%8F%A0&searchType=1&cateLevel=-1&ent=k&_imgSH=fourCardStyle" target="_blank" rel="noopener">
+      <span class="squircle bg-momo">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M2 3h3l2.6 12.5a2 2 0 0 0 2 1.5h8.9a2 2 0 0 0 2-1.6L22 7H6"/></svg>
+      </span>
+      <span class="app-name">momo 購物網</span>
+      <span class="app-sub">黑珍珠系列</span>
+    </a>
+    <a class="app" href="https://24h.pchome.com.tw/store/DEADG9" target="_blank" rel="noopener">
+      <span class="squircle bg-pchome">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg>
+      </span>
+      <span class="app-name">PChome 24h</span>
+      <span class="app-sub">品牌館</span>
+    </a>
+    <a class="app" href="https://www.etmall.com.tw/Search?keyword=BlackPearl%E9%BB%91%E7%8F%8D%E7%8F%A0&fa=%E5%93%81%E7%89%8C_BlackPearl%E9%BB%91%E7%8F%8D%E7%8F%A0" target="_blank" rel="noopener">
+      <span class="squircle bg-etmall">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M8 21h8M12 18v3"/></svg>
+      </span>
+      <span class="app-name">東森購物網</span>
+      <span class="app-sub">ETMall</span>
+    </a>
+    <a class="app" href="https://tw.buy.yahoo.com/search/product?flt=%E5%93%81%E7%89%8C_%E9%BB%91%E7%8F%8D%E7%8F%A0" target="_blank" rel="noopener">
+      <span class="squircle bg-yahoo">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4l7 9v7M19 4l-7 9"/></svg>
+      </span>
+      <span class="app-name">Yahoo 購物中心</span>
+      <span class="app-sub">品牌搜尋</span>
+    </a>
+    </nav>
+  </section>
+
+</main>
+
+<footer class="dock-area">
+  <div class="dock">
+    <span class="en">Spraypal &times; Black Pearl</span>
+    <span class="dot"></span>
+    <span>揚軒食品股份有限公司</span>
+    <span class="dot"></span>
+    <span>黑珍珠集團</span>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var zone = document.getElementById('mistZone');
+    for (var i = 0; i < 22; i++){
+      var d = document.createElement('span');
+      d.className = 'mist-dot';
+      var size = 2 + Math.random() * 4;
+      d.style.width = size + 'px';
+      d.style.height = size + 'px';
+      d.style.left = (5 + Math.random() * 90) + '%';
+      d.style.top = (5 + Math.random() * 85) + '%';
+      d.style.setProperty('--dx', (Math.random() * 220 - 110) + 'px');
+      d.style.setProperty('--dy', (Math.random() * 140 - 70) + 'px');
+      d.style.animationDelay = (Math.random() * 5) + 's';
+      d.style.animationDuration = (4 + Math.random() * 2.5) + 's';
+      zone.appendChild(d);
+    }
+  })();
+</script>
+
+</body>
+</html>
